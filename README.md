@@ -1,0 +1,1 @@
+My practical exercises in module Sensors, Physics 11 at Nguyen Gia Thieu High School with @qtv
