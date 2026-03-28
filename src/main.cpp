@@ -16,20 +16,20 @@ void setup() {
 }
 
 void loop() {
-  int state = digitalRead(rainPin);
+  int state = digitalRead(rainPin);\
 
   if (state == LOW && !isRaining) {
     Serial.println("Co mua => Dong rem");
-    curtain.write(90);
+    curtain.write(75);
     isRaining = true;
-    delay(2000);
+    delay(1000);
   }
 
   if (state == HIGH && isRaining) {
     Serial.println("Kho => Mo rem");
     curtain.write(0);
     isRaining = false;
-    delay(2000);
+    delay(1000);
   }
 
   delay(200);
